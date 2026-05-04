@@ -1,5 +1,12 @@
+import { useEffect, useState } from "react"
 
 function App() {
+
+  const [apiData, setApiData] = useState()
+
+  useEffect(async () => {
+    const data = await fetch(``)
+  }, [])
   
   return (
     <>
