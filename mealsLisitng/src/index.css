@@ -1,5 +1,150 @@
+@import "tailwindcss";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+
+/* Container */
+.meal-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: #f5f7fb;
+}
+
+/* Card */
+.meal-card {
+  background: #fff;
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Image */
+.meal-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+/* Title */
+.meal-title {
+  font-size: 24px;
+  color: #2563eb;
+  margin-bottom: 6px;
+}
+
+/* Meta */
+.meal-meta {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* Section */
+.meal-section {
+  margin-bottom: 14px;
+}
+
+.meal-section h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+/* Instructions */
+.instructions {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Links */
+.meal-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.meal-links a {
+  text-decoration: none;
+  padding: 6px 10px;
+  background: #e0edff;
+  color: #2563eb;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.meal-links a:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .meal-card {
+    padding: 16px;
+  }
+
+  .meal-title {
+    font-size: 20px;
+  }
+}
+
+
+/* Container */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Base Button */
+.btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Previous Button */
+.prev-btn {
+  background-color: #e5e7eb;
+  color: #333;
+}
+
+.prev-btn:hover {
+  background-color: #d1d5db;
+}
+
+/* Next Button */
+.next-btn {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.next-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pagination-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
