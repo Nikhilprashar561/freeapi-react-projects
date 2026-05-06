@@ -3,3 +3,158 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.h{
+   text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 20px 0;
+  letter-spacing: 0.5px;
+}
+
+/* Container */
+.cat-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  background: #f5f7fb;
+}
+
+/* Card */
+.cat-card {
+  background: #fff;
+  max-width: 500px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Image */
+.cat-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 16px;
+}
+
+/* Name */
+.cat-name {
+  font-size: 24px;
+  color: #2563eb;
+  margin-bottom: 4px;
+}
+
+/* Origin */
+.cat-origin {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* Description */
+.cat-description {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* Sections */
+.cat-section {
+  margin-bottom: 14px;
+}
+
+.cat-section h4 {
+  font-size: 16px;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+/* Links */
+.cat-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cat-links a {
+  text-decoration: none;
+  font-size: 13px;
+  padding: 6px 10px;
+  background: #e0edff;
+  color: #2563eb;
+  border-radius: 6px;
+}
+
+.cat-links a:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .cat-card {
+    padding: 16px;
+  }
+
+  .cat-name {
+    font-size: 20px;
+  }
+}
+
+
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Base Button */
+.btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Previous Button */
+.prev-btn {
+  background-color: #e5e7eb;
+  color: #333;
+}
+
+.prev-btn:hover {
+  background-color: #d1d5db;
+}
+
+/* Next Button */
+.next-btn {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.next-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pagination-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
