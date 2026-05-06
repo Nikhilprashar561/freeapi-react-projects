@@ -3,3 +3,144 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.h{
+   text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 20px 0;
+  letter-spacing: 0.5px;
+}
+
+/* Container for centering */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f7fb;
+
+}
+
+/* Card Design */
+.card {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 20px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  margin: 0.5rem 1rem;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Content text */
+.content {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* Author */
+.author {
+  font-size: 18px;
+  color: #2563eb;
+  margin-bottom: 12px;
+}
+
+/* Meta section */
+.meta {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Tag */
+.tag {
+  background-color: #e0edff;
+  color: #2563eb;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Date */
+.date {
+  font-size: 12px;
+  color: #777;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .card {
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    max-width: 600px;
+  }
+}
+
+
+/* Container */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+/* Base Button */
+.btn {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Previous Button */
+.prev-btn {
+  background-color: #e5e7eb;
+  color: #333;
+}
+
+.prev-btn:hover {
+  background-color: #d1d5db;
+}
+
+/* Next Button */
+.next-btn {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+.next-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pagination-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
