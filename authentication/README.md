@@ -1,16 +1,31 @@
-# React + Vite
+# Auth Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Step 1 :- Register a User 
 
-Currently, two official plugins are available:
+Api Endpoint :- POST https://api.freeapi.app/api/v1/users/register // Use this endpoint to allow a new user to create an account.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Data Accept :- {
+  "email": "user.email@domain.com",
+  "password": "test@123",
+  "role": "ADMIN",
+  "username": "doejohn"
+}
 
-## React Compiler
+Step 2 :- Login User 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Api Endpoint :- POST https://api.freeapi.app/api/v1/users/login 
 
-## Expanding the ESLint configuration
+// Use this endpoint to allow registered users to log in and receive an authenticated session.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Data Except :- {
+  "password": "test@123",
+  "username": "doejohn"
+}
+
+Step 3 :- Logout User 
+
+Api Endpoint :- POST https://api.freeapi.app/api/v1/users/logout // Use this endpoint to log the user out and clear the active session.
+
+Step 4 :- Get Current Logged in User.
+
+Api Endpoint :- GET https://api.freeapi.app/api/v1/users/current-user
