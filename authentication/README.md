@@ -1,5 +1,7 @@
 # Auth Project
 
+Live URL :- [Auth](https://authnikhil.netlify.app/)
+
 Step 1 :- Register a User 
 
 Api Endpoint :- POST https://api.freeapi.app/api/v1/users/register // Use this endpoint to allow a new user to create an account.
